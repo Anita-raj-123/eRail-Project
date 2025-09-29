@@ -13,8 +13,7 @@ public class Home_Utility extends Home_Base {
 	
 	public static ExtentReports getInstance() {
         if (extent == null) {
-            String reportPath = System.getProperty("user.dir") + "/E_Reports/ExtentReport2.html";
-           //String reportPath = System.getProperty("C:\\Users\\anshu\\eclipse-workspace_A1\\E_Rail_New_Task_1\\E_Reports\\Report1.html");
+            String reportPath = System.getProperty("user.dir") + "/E_Reports/ExtentReport3.html";
             ExtentSparkReporter reporter = new ExtentSparkReporter(reportPath);
 
             reporter.config().setReportName("Automation Test Report");

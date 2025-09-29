@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-29T13:54:10 IST" name="Default suite" finished-at="2025-09-29T13:58:00 IST" duration-ms="229369">
+  <suite started-at="2025-09-29T14:23:32 IST" name="Default suite" finished-at="2025-09-29T14:24:49 IST" duration-ms="77615">
     <groups>
     </groups>
-    <test started-at="2025-09-29T13:54:10 IST" name="Default test" finished-at="2025-09-29T13:58:00 IST" duration-ms="229369">
+    <test started-at="2025-09-29T14:23:32 IST" name="Default test" finished-at="2025-09-29T14:24:49 IST" duration-ms="77615">
       <class name="com.testcase.Home_TestCases">
-        <test-method is-config="true" signature="GetSetup()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T13:54:11 IST" name="GetSetup" finished-at="2025-09-29T13:54:21 IST" duration-ms="10407" status="PASS">
+        <test-method is-config="true" signature="GetSetup()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T14:23:32 IST" name="GetSetup" finished-at="2025-09-29T14:23:51 IST" duration-ms="18952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetSetup -->
-        <test-method signature="Test_selectFromdromdown()[pri:1, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T13:54:21 IST" name="Test_selectFromdromdown" finished-at="2025-09-29T13:54:45 IST" duration-ms="24094" status="PASS">
+        <test-method signature="Test_selectFromdromdown()[pri:1, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T14:23:51 IST" name="Test_selectFromdromdown" finished-at="2025-09-29T14:23:59 IST" duration-ms="8687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_selectFromdromdown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T13:54:45 IST" name="teardown" finished-at="2025-09-29T13:54:48 IST" duration-ms="3115" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T14:23:59 IST" name="teardown" finished-at="2025-09-29T14:24:03 IST" duration-ms="3207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="GetSetup()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T13:54:48 IST" name="GetSetup" finished-at="2025-09-29T13:56:32 IST" duration-ms="103834" status="PASS">
+        <test-method is-config="true" signature="GetSetup()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T14:24:03 IST" name="GetSetup" finished-at="2025-09-29T14:24:15 IST" duration-ms="12484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetSetup -->
-        <test-method signature="Test_FromStationDropdwon()[pri:2, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T13:56:32 IST" name="Test_FromStationDropdwon" finished-at="2025-09-29T13:56:38 IST" duration-ms="5852" status="PASS">
+        <test-method signature="Test_FromStationDropdwon()[pri:2, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T14:24:15 IST" name="Test_FromStationDropdwon" finished-at="2025-09-29T14:24:24 IST" duration-ms="9161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_FromStationDropdwon -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T13:56:38 IST" name="teardown" finished-at="2025-09-29T13:56:48 IST" duration-ms="10019" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T14:24:24 IST" name="teardown" finished-at="2025-09-29T14:24:25 IST" duration-ms="855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="GetSetup()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T13:56:48 IST" name="GetSetup" finished-at="2025-09-29T13:57:26 IST" duration-ms="38047" status="PASS">
+        <test-method is-config="true" signature="GetSetup()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T14:24:25 IST" name="GetSetup" finished-at="2025-09-29T14:24:37 IST" duration-ms="12366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetSetup -->
-        <test-method signature="Test_HhandleCalendar()[pri:3, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T13:57:26 IST" name="Test_HhandleCalendar" finished-at="2025-09-29T13:57:58 IST" duration-ms="31993" status="PASS">
+        <test-method signature="Test_HhandleCalendar()[pri:3, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T14:24:37 IST" name="Test_HhandleCalendar" finished-at="2025-09-29T14:24:48 IST" duration-ms="10965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_HhandleCalendar -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T13:57:58 IST" name="teardown" finished-at="2025-09-29T13:58:00 IST" duration-ms="1855" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcase.Home_TestCases@477b4cdf]" started-at="2025-09-29T14:24:48 IST" name="teardown" finished-at="2025-09-29T14:24:49 IST" duration-ms="811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
