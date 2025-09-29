@@ -2,6 +2,7 @@ package com.testcase;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.poi.ss.usermodel.Cell;
@@ -22,27 +23,60 @@ import com.utility.Home_Utility;
 
 public class Home_TestCases extends Home_Base {
 
-	
 	public static Home_Utility homeutil;
 	public static Workbook workbook;
 	public static Sheet sheet;
 	public static com.aventstack.extentreports.ExtentReports extent;
 	public static com.aventstack.extentreports.ExtentTest test;
-	
+
 	public Home_TestCases() {
 		super();
 	}
-	
-	
+
 	@BeforeMethod
 	public void GetSetup() throws InterruptedException {
 		setup();
-	
 		homeutil = new Home_Utility();
 		extent = homeutil.getInstance();
 
 	}
+	
 	@Test(priority = 1)
+	public void Test_selectFromdromdown() throws InterruptedException {
+		test = extent.createTest("Test_SelectFromdromdown");
+
+		
+		WebElement fromstation = driver.findElement(By.xpath("//input[@id='txtStationFrom']"));
+		fromstation.clear();
+
+		fromstation.sendKeys("del");
+		Thread.sleep(3000);
+
+		List<WebElement> option_List = driver.findElements(
+				By.xpath("//div[@class='autocomplete-w1']/div[contains(@class,'autocomplete')]/div[@title]"));
+
+		
+		System.out.println(option_List.size());
+		
+		System.out.println("*********************************************************************\n");
+			
+		System.out.println("Verifying the position"+ " "+option_List.get(3).getText());
+		
+		System.out.println("*********************************************************************\n");
+		
+		
+		if (option_List.size() >= 4) {
+	        System.out.println("Selecting the 4th suggestion: " + option_List.get(3).getText());
+	        option_List.get(3).click();
+	        Thread.sleep(2000);
+	    } else {
+	        System.out.println("Fewer than 4 suggestions appeared.");
+	    }
+		
+
+	}
+
+	@Test(priority = 2)
 	public void Test_FromStationDropdwon() throws IOException {
 		test = extent.createTest("Test_FromStationDropdwon");
 
@@ -53,7 +87,7 @@ public class Home_TestCases extends Home_Base {
 		List<WebElement> options = driver.findElements(By.xpath("(//div[@class='autocomplete-w1'])[1]"));
 
 		workbook = new XSSFWorkbook();
-		sheet = workbook.createSheet("DropdownValues_13");
+		sheet = workbook.createSheet("DropdownValues_29Sep");
 		int rowNum = 0;
 
 		for (WebElement option : options) {
@@ -63,49 +97,19 @@ public class Home_TestCases extends Home_Base {
 			cell.setCellValue(option.getText());
 
 		}
-		FileOutputStream Fileout = new FileOutputStream("C:\\Users\\anshu\\DropdownValues_13.xlsx");
+		FileOutputStream Fileout = new FileOutputStream("C:\\Users\\anshu\\DropdownValues_29Sep.xlsx");
 		workbook.write(Fileout);
 		Fileout.close();
-		System.out.println("Final file save in excel");
+		System.out.println("New Excel File Created Save");
 	}
 
 
-	@Test(priority = 2)
-	public void Test_selectFromdromdown() throws InterruptedException {
-		test = extent.createTest("Test_SelectFromdromdown");
 
-		String city = "Cantt";
-		WebElement fromstation = driver.findElement(By.xpath("//input[@id='txtStationFrom']"));
-		fromstation.clear();
-
-		fromstation.sendKeys("del");
-		Thread.sleep(3000);
-
-		List<WebElement> option_List = driver.findElements(
-				By.xpath("//div[@class='autocomplete-w1']/div[contains(@class,'autocomplete')]/div[@title]"));
-
-		System.out.println(option_List.size());
-
-		for (WebElement e : option_List) {
-		String current = e.getText();
-			// String current = e.getAttribute("title");
-			System.out.println(current);
-
-			if (current.contains(city)) {
-				e.click();
-				System.out.println(e);
-				break;
-
-			}
-		}
-
-	}
-	
 	@Test(priority = 3)
 	public void Test_HhandleCalendar() throws InterruptedException {
 		test = extent.createTest("Test_HandleCalendar");
 	
-		String date = "29-Sep-25 Mon";
+		String date = "30-Sep-25 Tue";
 		String[] splitdateArr = date.split("-");
 		String day = splitdateArr[0];
 		String month = splitdateArr[1];
@@ -160,9 +164,9 @@ public class Home_TestCases extends Home_Base {
 
 	@AfterMethod
 	public void teardown() {
-
-		driver.quit();
 		extent.flush();
+		driver.quit();
+		
 	}
 
 }
