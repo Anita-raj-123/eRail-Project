@@ -71,6 +71,7 @@ public class Home_TestCases extends Home_Base {
 	        Thread.sleep(2000);
 	    } else {
 	        System.out.println("Fewer than 4 suggestions appeared.");
+	        System.out.println("*********************************************************************\n");
 	    }
 		
 
